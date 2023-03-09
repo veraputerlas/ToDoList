@@ -1,0 +1,18 @@
+.header_date{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: $header-date;
+    border-radius: 16px;
+    width: fit-content;
+    padding: 0 15px;
+
+    p{
+font-size: 20px;
+color: black;
+    }
+    h2{
+font-size: 20px;
+color: black;
+    }
+}

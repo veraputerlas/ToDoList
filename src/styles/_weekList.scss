@@ -1,0 +1,18 @@
+.week_list {
+    display: flex;
+    list-style: none;
+    color: black;
+    gap: 15px;
+    border-radius: 16px;
+    width: fit-content;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    background-color: #fff;
+    li{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
