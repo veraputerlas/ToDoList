@@ -1,0 +1,16 @@
+.mood-indicator {
+    width: 416px;
+    height: 128px;
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    .img {
+        width: 40px;
+        height: 40px;
+    }
+}

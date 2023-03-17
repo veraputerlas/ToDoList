@@ -1,28 +1,25 @@
 const dayList = [
-    "Sun",
-    "Mon",
-    "Tue",
-    "Wed",
-    "Thu",
-    "Fry",
-    "Sat"
-  ]
-const weekList = document.createElement ("ul")
-let date = new Date ()
+  { id: "sun", title: "Вс" },
+  { id: "mon", title: "Пн" },
+  { id: "tue", title: "Вт" },
+  { id: "wed", title: "Ср" },
+  { id: "thu", title: "Чт" },
+  { id: "fri", title: "Пт" },
+  { id: "sat", title: "Сб" },
+]
+const weekList = document.createElement("ul")
+let date = new Date()
 
 weekList.classList.add('week_list')
-weekList.innerHTML =`
-               <li>Вс <input id="Sun" type="radio"></li>
-               <li>Пн <input id="Mon" type="radio"></li>
-               <li>Вт <input id="Tue" type="radio"></li>
-               <li>Ср <input id="Wed" type="radio"></li>
-               <li>Чт <input id="Thu" type="radio"></li>
-               <li>Пт <input id="Fry" type="radio"></li>
-               <li>Сб <input id="Sat" type="radio"></li>`
+for (let i = 0; i < dayList.length; i++) {
+  const { id, title } = dayList[i]
+  weekList.innerHTML += `<li>${title}<input id="${id}" type="radio"  name='day' ></li>`
+}
                
     const week = [];
     for (let i = 0; i < dayList.length; i++) {
-    const day = weekList.querySelector(`#${dayList[i]}`)
+      const {id} = dayList[i]
+    const day = weekList.querySelector(`#${id}`)
     week.push(day)
     }
 week[date.getDay()].checked = true
