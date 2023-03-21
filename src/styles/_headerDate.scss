@@ -6,13 +6,17 @@
     border-radius: 16px;
     width: fit-content;
     padding: 0 15px;
+    height: 80px;
 
     p{
-font-size: 20px;
-color: black;
+        font-weight: 400;
+        font-size: 40px;
+        // line-height: 59px;
+        color:black
     }
     h2{
-font-size: 20px;
-color: black;
+        font-weight: 700;
+        font-size: 40px;
+        // line-height: 59px;
     }
 }

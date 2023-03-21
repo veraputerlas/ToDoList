@@ -14,13 +14,13 @@ const monthList =[
 ]
 
 const headerDate = document.createElement("div")
-headerDate.classList.add('header_date')
 let date = new Date()
 
+headerDate.classList.add('header_date')
 headerDate.innerHTML = `
-    <p>Date:</p>
-    <h2>${monthList[date.getMonth()]} ${date.getDate()}</h2>
-`
+        <p>Сегодня:</p>
+        <h2>${monthList[date.getMonth()]} / ${date.getDate()}</h2>
+    `
 
 
 

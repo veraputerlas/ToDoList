@@ -33,6 +33,9 @@
         flex-direction: column;
         border-bottom: 1px solid black;
         width: 100%;
+        background: #ffffff;
+        animation: 1s slideIn ease;
+        position: relative;
         &_id {
             display: flex;
             justify-content: flex-start;
@@ -50,11 +53,32 @@
             padding: 0 10px;
             font-weight: 400;
             font-size: 18px;
-            line-height: 30px;
-            margin: 26px 0;
+            line-height: 27px;
             border: none;
             outline: none;
-            width: 100%;
+            width: 80%;
+    }
+    .delete {
+        color: $header-date;
+        display: block;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 30px;
+        border: 3px solid $header-date;
+        border-radius: 50%;
+        right: 0;
+        cursor: pointer;
+        transform: all 0.3s easy-out;
+        &:hover {
+            border-color: $header-date;
+            border-radius: 50%;
+        }
     }
         }
         .select {
@@ -64,14 +88,18 @@
             font-weight: 700;
             font-size: 20px;
             line-height: 30px;
+            border-radius: 5px;
+            border: 1px solid $header-date;
         }
         .task-input {
-            width: 93%;
+            width: 92%;
             height: 40px;
             padding: 0 20px;
             font-weight: 700;
             font-size: 20px;
             line-height: 30px;
+            border-radius: 5px;
+            border: 1px solid $header-date;
         }
         .submit {
             width: 100%;
@@ -84,5 +112,13 @@
             border-radius: 5px;
             border: 1px solid #ebb8e5;
         }
+    }
+    @keyframes slideIn {
+        from {
+            transform: translateX(-100px);
+     }
+     to {
+        transform: translateX(0px);
+     }
     }
     

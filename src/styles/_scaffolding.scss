@@ -1,15 +1,29 @@
 html {
   font-size: $font-size;
   font-family: $font-family;
-  background: $background-color;
+  background: white;
   color: $font-color;
-  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
 
 body {
-  margin: auto;
-  // text-align: center;
+  text-align: center;
+  padding: 48px;
+  background-color: #ebb8e5;
+  border: 1px solid #ff6fff;
+  border-radius: 12px;
   max-width: $page-width;
+  
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 h1 {
